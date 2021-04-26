@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <NavBar />
+    <MainSection />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar'
+import MainSection from "./components/MainSection";
 
 export default {
   name: 'App',
   components: {
     NavBar,
+    MainSection,
   }
 }
 </script>
@@ -22,6 +25,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
