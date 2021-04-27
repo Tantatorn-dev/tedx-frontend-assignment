@@ -1,5 +1,8 @@
 <template>
-  <div class="columns">
+  <div class="columns reverse-row-order">
+    <div id="doggo-bg" class="crop column" :style="cssProps">
+      <img id="doggo" src="../assets/hero.png" />
+    </div>
     <div class="column">
       <h1 id="topo1" class="is-size-1">
         What's meant to be will always find a way.
@@ -9,9 +12,6 @@
         partner for your dearest fluffy friend
       </h1>
       <button id="match-button" class="button is-primary">Find A Match</button>
-    </div>
-    <div id="doggo-bg" class="crop column" :style="cssProps">
-      <img id="doggo" src="../assets/hero.png" />
     </div>
   </div>
 </template>
@@ -53,4 +53,9 @@ export default {
   background-color: rgb(253, 230, 230);
   border-bottom-left-radius: 100px;
 }
+
+.reverse-row-order {
+  flex-direction: row-reverse;
+}
+
 </style>
