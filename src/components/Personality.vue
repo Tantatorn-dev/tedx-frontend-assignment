@@ -3,7 +3,7 @@
     <h1 id="topo" class="is-size-3">
       Dogs have these 5 major personality types
     </h1>
-    <nav class="level">
+    <nav class="level is-mobile">
       <div class="level-item has-text-centered">
         <div>
           <img src="../assets/icon-1.png" />
@@ -58,7 +58,8 @@ export default {
 }
 
 nav {
-    overflow: auto;
+  padding-inline: 20px;
+  overflow: auto;
 }
 
 p {
